@@ -1,0 +1,51 @@
+.hm_hyperModalWrapper .hm_hyperModalContentWrapper{
+    max-width: 500px;
+    max-height: 450px;
+}
+
+.hm_hyperModalContentWrapper{
+    .hm_hyperCloseIconWrapper{
+        display: none;
+    }
+}
+
+.AddPostModal{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5rem;
+    height: 100%;
+    justify-content: center;
+
+    .ModalHeader{
+        color: $COLOR_VIOLET;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .Author, .Content{
+        border: 1px solid $COLOR_VIOLET;
+        font-size: inherit;
+        border-radius: 3px;
+    }
+    .Author{
+        padding: 0 10px;
+        margin: 2rem 0;
+        height: 30px;
+    }
+    .Content{
+        height: 150px;
+        padding: 10px 10px;
+        margin-bottom: 0.5rem;
+    }
+    .charCount{
+        text-align: right;
+        color: $COLOR_VIOLET;
+    }
+    .buttonsWrapper{
+        margin: 2rem 0 0;
+        display: flex;
+        justify-content: space-around;
+        button{
+            @include button-round;
+        }
+    }
+}

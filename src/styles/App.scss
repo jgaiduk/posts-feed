@@ -1,0 +1,22 @@
+$COLOR_VIOLET: rgb(110, 49, 166);
+
+@mixin button-round{
+    border: 1px solid $COLOR_VIOLET;
+    background: transparent;
+    width: 150px;
+    height: 30px;
+    font-size: inherit;
+    color: $COLOR_VIOLET;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@import './PostsFeed.scss';
+@import './AddPostModal.scss';
+@import './UserPage.scss';
+
+.App{
+    font-size: 3rem;
+}
+
+

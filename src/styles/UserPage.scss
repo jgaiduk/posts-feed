@@ -1,0 +1,62 @@
+.UserPage{
+    width: 50vw;
+    margin: 5rem auto 0;
+    font-size: 1.5rem;
+    .UserInfoBox{
+        padding: 1rem;
+        text-align: center;
+        position: relative;
+        .arrowIcon{
+            @include button-round;
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.5rem;
+            width: 120px;
+            svg{
+                margin-right: 10px;
+                width: 24px;
+                height: 24px;
+                fill: $COLOR_VIOLET;
+            }
+        }
+    }
+    .UserName{
+        font-size: 3rem;
+        text-transform: capitalize;
+        color: $COLOR_VIOLET;
+        margin-bottom: 1rem;
+    }
+    .locationIcon, .briefcaseIcon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .locationIcon svg{
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+        fill: $COLOR_VIOLET;
+    }
+    .briefcaseIcon svg{
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        stroke: $COLOR_VIOLET;
+    }
+    .Date{
+        width: 100%;
+        text-align: right;
+    }
+}
+@media (max-width: 1450px) {
+    .UserPage {
+      width: 60vw; 
+    } 
+  }
+@media (max-width: 1000px) {
+    .UserPage {
+        width: 70vw; 
+    } 
+}
